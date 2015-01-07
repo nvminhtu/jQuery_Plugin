@@ -1,0 +1,14 @@
+#gallery {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+#gallery img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#gallery img.active {
+  display: block;
+}
