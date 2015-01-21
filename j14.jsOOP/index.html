@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Function</title>
+</head>
+<body>
+  <script type="text/Javascript">
+    var f = function(value) {
+      return 2*value;
+    }
+    //assign function
+    var g = f;
+    //test & debug
+    //console.log(f(1));
+
+    //example 1
+    //nested function
+    // function squareDist(x,y) {
+    //   function square(num) {
+    //     return num * num;
+    //   }
+    //   return square(x) + square(y);
+    // }
+    // squareDist(2,3);
+    // console.log(squareDist(2,3));
+
+    //example 2
+    //function with any elements
+    // function sum() {
+    //   var res = 0;
+    //   for (var i = 0; i < arguments.length; i++) {
+    //     res += arguments[i];
+    //   }
+    //   return res;
+    // }
+    // console.log(sum(1,2,3,4,5));
+
+    //example 3
+    //converted function with any elements
+    function map(func, arr) {
+      var res = [];
+      for (var i = 0; i < arr.length; i++) {
+        res.push(func(arr[i]));
+      }
+      return res;
+    }
+    function factorThree(val) {
+      return 3*val;
+    }
+    console.log(map(factorThree,['0','5','-4']));
+    //console.log(map(parseInt, ['0','5','-4']));
+
+  </script>
+</body>
+</html>

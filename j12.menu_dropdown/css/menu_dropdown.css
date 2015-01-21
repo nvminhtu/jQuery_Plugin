@@ -1,6 +1,18 @@
+.clearfix {
+  content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  display: block;
+  color: #ddd;
+}
 /*----------------------------------------------------
   top_menu
 ----------------------------------------------------*/
+ul.top_menu, ul.second_menu {
+  display: block;
+}
 ul.top_menu {
   margin: 0;
   padding: 0;
@@ -48,3 +60,13 @@ ul.top_menu li ul li a:hover {
 /*----------------------------------------------------
   second_menu:
 ----------------------------------------------------*/
+ul.second_menu {
+  height: 102px; 
+  padding-top: 20px;
+  background: url(../img/menu1/bg.png) repeat-x;
+  margin: 0;
+  padding: 0;
+}
+ul.second_menu li {
+  float: left;
+}
